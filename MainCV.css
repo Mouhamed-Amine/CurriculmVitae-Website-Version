@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("photos/Background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+}
+
+
+.container-card-show1{
+    height: 800px;
+    width: 400px;
+    position: relative;
+    background: orangered;
+    left: 30%;
+    opacity: .5;
+    transition: opacity 1s ease;
+    margin-top: 60px;
+    border-radius: 40px;
+}
+.container-card-show1:hover{
+    background: white;
+    border: none;
+    opacity: 1;
+    border-radius: 37px;
+    box-shadow: 5px 8px 15px 10px #ffb8b8;
+    transition: all 1s ease-in-out;
+
+}
+
+.Image-side,.Image-side2{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-top-left-radius: 37px;
+    border-top-right-radius: 37px;
+}
+.Image-side img,.Image-side2 img{
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+    border-radius: 800px;
+   /* opacity: .4;
+    transition: opacity 1s linear;*/
+    border-top-left-radius: 37px;
+    border-top-right-radius: 37px;
+}
+/*
+.Image-side img:hover{
+    opacity: 1;
+}
+*/
+
+.Personal-Side{
+    position: relative;
+    top: 353px;
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+}
+.Personal-Side:hover{
+    background: white;
+    border-bottom-left-radius:37px;
+    border-bottom-right-radius:37px;
+    border-top: 3px solid black;
+}
+
+.Personal-Side #interest{
+    position: absolute;
+   /* background: aqua;*/
+    height: 245px;
+    width: 200px;
+}
+.Personal-Side #Languages{
+    position: absolute;
+    left: 200px;
+   /* background: blue;*/
+    height: 245px;
+    width: 200px;
+}
+.Personal-Side #skills{
+    position: absolute;
+    top: 200px;
+  /*  background: green;*/
+    height: 227px;
+    width: 200px;
+
+}
+.Personal-Side #Certficate{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+ /*   background: yellow;*/
+    height: 224px;
+    width: 200px;
+  
+}
+
+/* Start Icons Customize*/
+.section-contact{
+    position: absolute;
+    top:0px;
+    height: 30px;
+    width: 200px;
+    font-size: x-large;
+    text-align: center;
+}
+.section-contact .icons{
+    list-style: none;
+}
+.section-contact .icons li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.section-contact .icons li a{
+    text-decoration: none;
+}
+
+.section-contact .icons li  a i{
+    color: black;
+}
+.section-contact .icons li a i:hover{
+color: red;
+}
+
+/* End Icons Customize*/
+
+/*Content CV Modify*/
+.section h2{
+    color: Blue ;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 10px;
+    cursor: pointer;
+}
+.section ul{
+    list-style: none;
+   margin: 10px;
+   text-align: center;
+   padding: 5px;
+   cursor: pointer;
+}
+.section ul li{
+    margin: 5px;
+    color:rgb(41, 19, 4);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+/*Seconde part of the card*/
+.container-card-show2{
+    height: 800px;
+    width: 400px;
+    background: orangered;
+    position: relative;
+    left: 60%;
+    top: -800px;
+    opacity: .5;
+    transition: opacity 1s ease;
+    border-radius: 40px;
+}
+.container-card-show2.is-flipped{
+    transform: rotate(180deg);
+}
+.container-card-show2:hover{
+    background: white;
+    border: none;
+    border-radius: 35px;
+    opacity: 1;
+    box-shadow: 5px 8px 15px 10px #ffb8b8;
+}
+
+.container-card-show2 .name{
+overflow: hidden;
+    height: 90px;
+    width: 100%;
+    background-color: #2c3e50;
+border-top-left-radius: 37px;
+border-top-right-radius: 37px;
+}
+.container-card-show2 .name h2{
+    color: white;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+.Personal-Side2 #Description span,#WorkExperience span,#EDUCATION span{
+    color: Blue ;
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin: 10px;
+    cursor: pointer;
+}
+.Personal-Side2 #Description p,#WorkExperience p,#EDUCATION p{
+    font-size: 1.2em;
+    font-style: italic;
+margin: 5px;
+}
+
+
+
+
+
+@media (max-width:768px){
+    .container-card-show1{
+        height: 800px;
+        width: 400px;
+   background: orangered;
+   position: absolute;
+   top: 30px;
+   left: 3px;
+    opacity: .5;
+        transition: opacity 1s ease;
+        margin: 30px;
+        border-radius: 40px;
+    }
+    .container-card-show2{
+        height: 800px;
+        width: 400px;
+        background: orangered;
+        position: absolute;
+        top:850px;
+        left: 3px;
+        opacity: .5;
+        margin: 30px;
+        transition: opacity 1s ease;
+        border-radius: 40px;
+    }
+}
+@media (min-width:769px) and (max-width:980px){
+    .container-card-show1{
+        height: 800px;
+        width: 400px;
+   background: orangered;
+   position: absolute;
+   top: 30px;
+   left: 200px;
+    opacity: .5;
+        transition: opacity 1s ease;
+        margin-top: 5px;
+        border-radius: 40px;
+    }
+    .container-card-show2{
+        height: 800px;
+        width: 400px;
+        background: orangered;
+        position: absolute;
+        top:850px;
+        left: 200px;
+        opacity: .5;
+        margin-top: 5px;
+        transition: opacity 1s ease;
+        border-radius: 40px;
+    }
+}
+
+
+@media (min-width:1024px){
+
+    .container-card-show1{
+        height: 800px;
+        width: 400px;
+        position: relative;
+        background: orangered;
+        left: 30%;
+        opacity: .5;
+        transition: opacity 1s ease;
+        margin-top: 60px;
+        margin-right: 20px;
+        border-radius: 40px;
+    }
+    .container-card-show2{
+        height: 800px;
+        width: 400px;
+        background: orangered;
+        position: relative;
+        left: 60%;
+        top: -800px;
+        opacity: .5;
+        margin-left: 20px;
+        transition: opacity 1s ease;
+        border-radius: 40px;
+    }
+}
+
+
